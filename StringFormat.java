@@ -7,7 +7,6 @@ public class StringFormat {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
 		ArrayList<String> list = new ArrayList<String>();
 		
 		int number = sc.nextInt();
@@ -21,6 +20,7 @@ public class StringFormat {
 		System.out.print("Hello ");
 		
 		System.out.print(list.get(0));
+		
 		for (int i = 1; i < list.size(); i++) {
 			System.out.print("," + list.get(i));			
 		}
