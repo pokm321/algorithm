@@ -32,6 +32,8 @@ public class FindBetterPlace {
 				System.out.println("noisy");
 			}
 		}
+		
+		sc.close();
 	}
 
 }
