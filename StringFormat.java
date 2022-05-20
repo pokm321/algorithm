@@ -1,37 +1,31 @@
 package algorithms;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class FindBetterPlace {
+public class StringFormat {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		ArrayList<String> list = new ArrayList<String>();
 		
-		String[] input = sc.nextLine().split(" ");
-		
-		int a = Integer.parseInt(input[0]);
-		int b = Integer.parseInt(input[1]);
-		int R = Integer.parseInt(input[2]);
-		
-		int N = sc.nextInt();
+		int number = sc.nextInt();
 		sc.nextLine();
 		
-		int[] x = new int[N];
-		int[] y = new int[N];
-		
-		for (int i = 0; i < N; i++) {
-			input = sc.nextLine().split(" ");
-			x[i] = Integer.parseInt(input[0]);
-			y[i] = Integer.parseInt(input[1]);
+		for (int i = 0; i < number; i++) {
+			String name = sc.nextLine();
+			list.add(name);
 		}
 		
-		for (int i = 0; i < N; i++) {
-			if (Math.pow(x[i] - a, 2) + Math.pow(y[i] - b, 2) >= Math.pow(R, 2)) {
-				System.out.println("silent");
-			} else {
-				System.out.println("noisy");
-			}
+		System.out.print("Hello ");
+		
+		System.out.print(list.get(0));
+		
+		for (int i = 1; i < list.size(); i++) {
+			System.out.print("," + list.get(i));			
 		}
+		
+		System.out.print(".");
 		
 		sc.close();
 	}
