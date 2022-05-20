@@ -26,6 +26,8 @@ public class StringFormat {
 		}
 		
 		System.out.print(".");
+		
+		sc.close();
 	}
 
 }
